@@ -1,3 +1,4 @@
+import 'package:demo/pages/welcome_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -20,11 +21,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // Remove the debug banner
       debugShowCheckedModeBanner: false,
-      title: 'Kindacode.com',
+      title: 'Travel app',
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: const HomeScreen(),
+      home: const WelcomePage(),
     );
   }
 }
