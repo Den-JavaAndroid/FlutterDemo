@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.white,
                           image: DecorationImage(
-                            image: AssetImage("img/turist.jpg"),
+                            image: AssetImage("assets/images/turist.jpg"),
                             fit: BoxFit.cover,
                           )),
                     );
@@ -135,7 +135,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                               borderRadius: BorderRadius.circular(20),
                               color: Colors.white,
                               image: DecorationImage(
-                                image: AssetImage("img/${images.keys.elementAt(index)}"),
+                                image: AssetImage("assets/images/${images.keys.elementAt(index)}"),
                                 fit: BoxFit.cover,
                               )),
                         ),
