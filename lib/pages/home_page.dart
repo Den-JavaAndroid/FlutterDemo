@@ -1,6 +1,6 @@
-import 'package:demo/misc/colors.dart';
-import 'package:demo/widgets/app_large_text.dart';
-import 'package:demo/widgets/app_text.dart';
+import 'package:travel_app/misc/colors.dart';
+import 'package:travel_app/widgets/app_large_text.dart';
+import 'package:travel_app/widgets/app_text.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,10 +13,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   var images = {
     "turist.jpg":"Turist",
-    "turist2.jpg":"Turist2",
-    "turist.jpg":"Turist",
-    "turist2.jpg":"Turist2",
     "turist2.jpg":"Turist2"
+    // "turist2.jpg":"Turist2",
+    // "turist2.jpg":"Turist2"
   };
   @override
   Widget build(BuildContext context) {
@@ -120,7 +119,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             width: double.maxFinite,
             margin: const EdgeInsets.only(left: 20),
             child: ListView.builder(
-                itemCount: 4,
+                itemCount: images.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (_, index) {
                   return Container(

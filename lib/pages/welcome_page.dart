@@ -1,6 +1,6 @@
-import 'package:demo/widgets/app_large_text.dart';
-import 'package:demo/widgets/app_text.dart';
-import 'package:demo/widgets/responsive_button.dart';
+import 'package:travel_app/widgets/app_large_text.dart';
+import 'package:travel_app/widgets/app_text.dart';
+import 'package:travel_app/widgets/responsive_button.dart';
 import 'package:flutter/material.dart';
 
 import '../misc/colors.dart';

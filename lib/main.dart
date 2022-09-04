@@ -1,5 +1,6 @@
-import 'package:demo/pages/navpages/main_page.dart';
-import 'package:demo/pages/welcome_page.dart';
+import 'package:travel_app/pages/detaild_page.dart';
+import 'package:travel_app/pages/navpages/main_page.dart';
+import 'package:travel_app/pages/welcome_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: const MainPage(),
+      home: const DetailPage(),
     );
   }
 }
