@@ -1,12 +1,17 @@
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:travel_app/cubit/app_cubit_logics.dart';
+import 'package:travel_app/cubit/app_cubits.dart';
 import 'package:travel_app/pages/detaild_page.dart';
 import 'package:travel_app/pages/navpages/main_page.dart';
 import 'package:travel_app/pages/welcome_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:travel_app/services/data_services.dart';
 
 import 'provider/movie_provider.dart';
 
 import 'screens/home_screen.dart';
+
 //example from https://www.kindacode.com/article/using-provider-for-state-management-in-flutter/#single__comments
 void main() {
   runApp(ChangeNotifierProvider<MovieProvider>(
@@ -27,7 +32,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: const DetailPage(),
+      home: BlocProvider<AppCubits>(
+        create: (context) => AppCubits(
+          data: DataServices(),
+        ),
+        child: AppCubitLogics(),
+      ),
     );
   }
 }
